@@ -1,0 +1,116 @@
+.homepage-main {
+    height: calc(100vh);
+    margin-top: 3.5rem;
+    background: url('https://free4kwallpapers.com/uploads/originals/2020/05/08/black-night-wallpaper.jpg');
+    background-size: cover;
+    width: auto;
+    font-family: 'Poppins', sans-serif;
+    .homepage-main-content {
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        position: relative;
+        .text {
+            padding: 50px;
+            color: #fff;
+            .text-para {
+                font-size: 3.5vmin;
+                font-weight: 400;
+                color: #fff;
+                max-width: 100%;
+                @media(max-width: 768px) {
+                    font-size: 5vmin;
+                }
+            }
+            .header {
+                text-transform: uppercase;
+                font-size: 10.5vmin;
+                margin-bottom: 10px;
+                font-weight: bolder;
+                @media(max-width: 768px) {
+                    font-size: 7vmin;
+                }
+            }
+        }
+        @media(max-width: 768px) {
+            padding: 15px;
+            flex-direction: column;
+        }
+        .scroll {
+            background: #000;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            overflow-x: scroll;
+            &::-webkit-scrollbar {
+                display: none;
+            }
+            padding:10px;
+            .card {
+                height: 120px;
+                width: 300px;
+                background-color: #000;
+                ;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin-left: 10px;
+                border: 1px solid transparent;
+                &:hover {
+                    transform: scale(1.05);
+                    transition: all 0.2s ease-in;
+                    z-index: 1;
+                }
+                @media(max-width:768px) {
+                    height: 100px;
+                    width: 180px;
+                    margin: 0;
+                }
+                @media(max-width:425px) {
+                    height: 100px;
+                    width: 230px;
+                }
+            }
+            .red {
+                background: linear-gradient(to bottom, #d10023, #001);
+                color: #fff;
+            }
+            .dark-blue {
+                background: linear-gradient(#00305f, #001);
+                color: #fff;
+            }
+            .black {
+                background: linear-gradient(#001, #000d1a);
+                color: #fff;
+            }
+            .premium {
+                background: linear-gradient(to bottom, rgb(173, 156, 56), rgb(78, 34, 21));
+                color: #fff;
+            }
+            .blue {
+                background: linear-gradient(#114ea5, #000d1a);
+                color: #fff;
+            }
+            @media(max-width:768px) {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                padding: 10px;
+                overflow-x: scroll;
+                .card {
+                    margin: 10px;
+                }
+            }
+            @media(max-width:425px) {
+                display: grid;
+                grid-template-columns: 1fr;
+                padding: 10px;
+                overflow-y: scroll;
+                .card {
+                    margin: 10px;
+                }
+            }
+        }
+    }
+}
